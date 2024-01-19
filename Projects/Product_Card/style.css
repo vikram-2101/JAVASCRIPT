@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  paading: 20px 20px;
+  margin: 20px auto;
+  background: rgb(18, 92, 107);
+}
+.container {
+  height: 600px;
+  width: 400px;
+  background: black;
+  /* border-radius: 10px; */
+  border-radius: 57px;
+  background: #e0e0e0;
+  box-shadow: 17px -17px 34px #7b7b7b, -17px 17px 34px #ffffff;
+  /* grid: column;
+    grid-template-columns: auto; */
+  position: relative;
+  /* width: 190px;
+  height: 254px; */
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container header {
+  height: 15%;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  border-radius: 10px;
+}
+
+.container .circle {
+  height: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+  margin: 50px auto;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+.circle img {
+  height: 40%;
+  margin: 100px 80px;
+}
+
+.btn {
+  margin-left: 150px;
+  background: rgb(201, 208, 137);
+  height: 8%;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  width: 20%;
+}
+
+.btn:hover {
+  border: solid 2px white;
+  scale: 105%;
+}
+
+.bubble {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+.bubble img {
+  width: 40px;
+  height: auto;
+  /* display: inline-block; */
+  animation: bubble 5s linear infinite;
+  opacity: 0;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70vh);
+  }
+}
+
+.bubble img:nth-child(1) {
+  animation-delay: 2s;
+}
+.bubble img:nth-child(2) {
+  animation-delay: 1s;
+  width: 25px;
+  height: auto;
+}
+.bubble img:nth-child(3) {
+  animation-delay: 3s;
+  width: 15px;
+}
+.bubble img:nth-child(4) {
+  animation-delay: 4.5s;
+  width: 60px;
+}
+.bubble img:nth-child(5) {
+  animation-delay: 3s;
+  width: 55px;
+}
+.bubble img:nth-child(6) {
+  animation-delay: 1s;
+}
+.bubble img:nth-child(7) {
+  animation-delay: 7s;
+  width: 60px;
+}
+.bubble img:nth-child(8) {
+  animation-delay: 3.5s;
+  width: 20px;
+}
+.bubble img:nth-child(9) {
+  animation-delay: 1s;
+}
+.bubble img:nth-child(10) {
+  animation-delay: 5s;
+}

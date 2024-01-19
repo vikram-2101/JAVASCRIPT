@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  background: black;
+  min-height: 100vh;
+  isolation: isolate;
+  position: relative;
+}
+
+.container {
+  /* background: rgb(207, 125, 125); */
+  height: 100vh;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+header {
+  height: 13vh;
+}
+
+.hero-section {
+  height: calc(100vh - 13vh);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: ease-in-out;
+}
+
+a:hover {
+  color: pink;
+
+  transition: ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navlist {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  background: white;
+  padding: 0.7rem 1rem;
+  border-radius: 50% 0 50% 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 0.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo::before {
+  left: 100%;
+}
+.logo::after {
+  right: 100%;
+}
+.Swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  background-size: contain;
+  object-fit: contain;
+  height: 650px;
+  z-index: 4;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}
+
+h1 {
+  font-family: "Amiri", serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.875);
+}
+.content {
+  position: absolute;
+  top: 39%;
+  
+}
+
+.content::before {
+  content: attr(data-type);
+  color: rgba(33, 55, 54, 0.538);
+  position: absolute;
+  right: 100%;
+  font-size: 8rem;
+  bottom: 130%;
+  font-weight: bold;
+ 
+}
+
+.content::after {
+  content: "Coffee";
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  background: green;
+  font-size: 1.7rem;
+  padding: 0.4rem 1rem;
+  right: 0;
+  letter-spacing: 0.3rem;
+  border-radius: 30% 0 30% 0;
+  top: 90%;
+}
+
+span{
+  position: relative;
+  z-index: 5;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.431);
+  -webkit-text-stroke: .2rem rgba(255, 255, 255, 0.95);
+}
+
+.glow1,
+.glow2 {
+  position: absolute;
+   border-radius:50% ;
+   z-index: -2;
+   filter: blur(100px);
+}
+.glow1 {
+  background: linear-gradient(rgba(108,188,253,0.65),rgba(124,90,252, 0.65));
+  width: 30rem;
+  aspect-ratio: 1;
+  
+  top: 0;
+  left: 0;
+}
+
+.glow2 {
+  width: 35rem;
+  height: 30rem;
+  background: linear-gradient(rgba(254,67,251, 0.65), rgba(255,183,49 , 0.65));
+  right: 0;
+  bottom: 0;
+  
+}
+
+.main-container::before{
+  content: "";
+  position: absolute;
+ 
+  background: rgba(255, 255, 255, 0.105);
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+}

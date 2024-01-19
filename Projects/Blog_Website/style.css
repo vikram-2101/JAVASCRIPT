@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px auto;
+  margin-bottom: 110px;
+}
+nav ul {
+  padding: 20px 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.logo h1 {
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 30px;
+  align-items: center;
+}
+.right img {
+  border-radius: 50px;
+}
+.left {
+  width: 30%;
+}
+.left h1 {
+  font-size: 70px;
+  font-weight: 500;
+  text-transform: bold;
+}
+.left h4 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: bold;
+}
+
+/* time section */
+.time {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 110px;
+  border: 1px solid #ccc;
+}
+.section .time_img {
+  height: 100%;
+}
+.time_container {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.time_container h1 {
+  margin-left: 20px;
+  text-align: flex-start;
+}
+
+.time_container p {
+  margin: 30px 20px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+footer h3 {
+  text-align: end;
+  margin-bottom: 90px;
+  margin: 10px 30px;
+}
+
+.features {
+  margin: 30px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 20px;
+}
+
+.features .first1,
+.first2,
+.first3 {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+.about {
+  margin: 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.about_content h1 {
+  padding: 30px 30px;
+  margin: 30px 0;
+  font-weight: 600;
+  text-transform: bold;
+  font-size: 70px;
+}
+
+.about_content p {
+  margin: 30px 20px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+.button {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn {
+  padding: 5px 25px;
+  margin: 10px 1300px;
+  border-radius: 10px;
+  background-color: rgb(164, 50, 213);
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.icon {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 20px 20px;
+  flex-direction: row;
+}
+
+.icon ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon ul li {
+  font-size: 1.8rem;
+  list-style: none;
+}

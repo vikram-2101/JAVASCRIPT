@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  background-color: #666;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.pimg1 {
+  background-image: url(image1.png);
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url(image2.png);
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url(image3.png);
+  min-height: 400px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  background-size: cover;
+  position: rlative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.ptext,
+.ptext1,
+.ptext2,
+.ptext3 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.textBg,
+.textBg1,
+.textBg2,
+.textBg3 {
+  background-color: grey;
+  padding: 20px;
+  color: white;
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  color: #add;
+  background-color: #282e34;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    /> -->
+
+    <title>Modern Coffee Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Main.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+        <div class="glow1"></div>
+        <div class="glow2"></div>
+        
+      <div class="container">
+        <header>
+          <nav class="navbar">
+            <ul class="navlist">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+            </ul>
+            <div class="logo">HB</div>
+            <ul class="navlist">
+              <li>
+                <a href="#">Flavours</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Learn</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="hero-section">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="Vanilla.png" alt="Coffee" />
+                <div class="content" data-type="01">
+                  <h1>Vani<span>lla</span></h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="Caramel.png" alt="Coffee" />
+                <div class="content" data-type="02">
+                  <h1>Cara<span>mel</span></h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="Espresso.png" alt="Coffee" />
+                <div class="content" data-type="03">
+                  <h1>Espr<span>esso</span></h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

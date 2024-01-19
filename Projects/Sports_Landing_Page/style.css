@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", "sans-serif";
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --drop-shadow:0px 3px 5px 2px rgba(0 ,0, 0, 0.171);
+    --main-color:#f64d4a;
+    --hover-shadow: 0px 5px 8px 2px rgba(0,0,0,0.171);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(31,31,31);
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+     
+     justify-content: center; 
+
+}
+.nav a {
+    
+    font-weight: 100;
+    font-size: 14px;
+    color: black;
+    margin-right: 70px;
+}
+
+
+ 
+.nav a:hover {
+ border: 2px solid black;
+}
+.nav .Cart {
+margin-left:70px ;
+padding: 10px 35px;
+border: 2px solid black;
+border-radius: 3px;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-container {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.main .main-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main-container div {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.main-container div h2 {
+    color: #3881ba;
+    margin: top 50px; 
+    margin: bottom 20px;
+
+}
+
+.main-container h1 {
+    font-size: 60px;
+    margin: 15px 0;
+    color: rgba(31,31,31);
+}
+
+.main-container p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.main-container .btn {
+    background: var(--main-color);
+    padding: 15px 25px;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 15px;
+    color: white ;
+    border-radius: 1px;
+    box-shadow: var(--drop-shadow);
+    transition: 0.2s ease-in-out;
+}
+
+.main-container img {
+    width: 100%;
+    transition: fadeUp 0.5s ease-in-out;
+    animation: fadeUp 0.8s ease;
+}
+
+.main-container .btn:hover {
+    background: rgba(214,214,214);
+    color: black ;
+}
+
+@media(max-width: 900px) {
+    .main .main-container {
+        grid-template-columns: 1fr;
+
+    }
+    .main-container img {
+        order: -1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0.1;
+        transform: translateY(-70px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
