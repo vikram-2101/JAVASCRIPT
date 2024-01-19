@@ -1,4 +1,4 @@
-jkgf// let modebtn = document.querySelector("#mode");
+kjkgf// let modebtn = document.querySelector("#mode");
 // let currMode = "light";
 // let body = document.querySelector("body");
 // modebtn.addEventListener("click", () => {
