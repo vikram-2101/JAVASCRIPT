@@ -16,7 +16,7 @@
 //   console.log(currMode);
 // });
 
-const student = {
+const student = {d
   name: "vikram",
   marks: 90,
   printMarks: function () {
