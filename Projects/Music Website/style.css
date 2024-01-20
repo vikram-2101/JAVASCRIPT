@@ -261,3 +261,18 @@ ul {
   background-color: rgb(34, 22, 107);
   color: white;
 }
+
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+.post h1 {
+  align-self: flex-start;
+  color: black;
+  font-size: 100px;
+  font-weight: 600;
+  margin: 200px;
+}
