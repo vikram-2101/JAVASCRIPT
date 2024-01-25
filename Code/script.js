@@ -1,4 +1,4 @@
-gthhjfs// let modebtn = document.querySelector("#mode");
+// let modebtn = document.querySelector("#mode");
 // let currMode = "light";
 // let body = document.querySelector("body");
 // modebtn.addEventListener("click", () => {
